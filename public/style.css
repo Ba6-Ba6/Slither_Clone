@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #050812;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: #050812;
+}
+
+#hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+#topbar {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#topbar span,
+#leaderboard,
+#help,
+#namePanel {
+  background: rgba(0,0,0,0.46);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 12px;
+  padding: 8px 11px;
+  text-shadow: 0 1px 3px black;
+}
+
+#leaderboard {
+  position: absolute;
+  top: 62px;
+  right: 14px;
+  min-width: 170px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#help {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  font-size: 13px;
+  line-height: 1.45;
+  max-width: 260px;
+}
+
+#namePanel {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  pointer-events: auto;
+  display: flex;
+  gap: 6px;
+}
+
+#nameInput {
+  width: 120px;
+  border: 0;
+  border-radius: 8px;
+  padding: 7px;
+  background: rgba(255,255,255,0.92);
+}
+
+#nameButton {
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 9px;
+  background: #65c7ff;
+  cursor: pointer;
+  font-weight: bold;
+}
