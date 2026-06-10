@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slither Online Modular</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="status">Connecting...</div>
+    <div id="leaderboard"></div>
+    <div id="help">Mouse: steer · Hold left mouse / W: boost · Right mouse / Space / S: shoot</div>
+  </div>
+
+  <div id="joinPanel">
+    <div class="card">
+      <h1>Slither Online</h1>
+      <p>Modular multiplayer build. Larger map, mouse control, lower growth, server-side shooting.</p>
+      <input id="nameInput" maxlength="16" placeholder="Name" />
+      <button id="joinButton">Join Game</button>
+      <p class="small">Open this URL on several computers to play together.</p>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
