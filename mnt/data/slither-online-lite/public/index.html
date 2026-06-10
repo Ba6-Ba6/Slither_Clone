@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Slither Online Lite</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div id="topbar">
+    <span id="status">Connecting...</span>
+    <span id="score">Score: 0</span>
+    <span id="players">Players: 0</span>
+  </div>
+  <div id="leaderboard"></div>
+  <div id="help">
+    <strong>Controls</strong><br>
+    A/D or ←/→: turn<br>
+    W or ↑: boost<br>
+    Objective: eat orbs and make others hit your body.
+  </div>
+  <div id="namePanel">
+    <input id="nameInput" maxlength="18" placeholder="Name" />
+    <button id="nameButton">Set name</button>
+  </div>
+</div>
+<script src="client.js"></script>
+</body>
+</html>
